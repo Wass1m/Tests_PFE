@@ -359,8 +359,8 @@ var AntColony = (function () {
     this._colony = [];
 
     this._colonySize = 5;
-    this._alpha = 1;
-    this._beta = 3;
+    this._alpha = 0.1;
+    this._beta = 0.1;
     this._rho = 0.1;
     this._initPheromone = 1;
     this._maxIterations = 1;
@@ -753,7 +753,7 @@ var Graph = (function () {
   function Graph() {
     this._noeuds = [];
     this._tableVoisin = [];
-    this._dimension = 10;
+    this._dimension = 6;
   }
 
   Graph.prototype.createG = function () {
@@ -1646,11 +1646,11 @@ const execCreation = () => {
 
 // ant colony init
 
-var colonySize = 50;
+var colonySize = 10;
 var alpha = 0.25;
 var beta = 0.1;
 var rho = 0.1;
-var iteration = 1;
+var iteration = 10;
 var initPheromone = 1;
 
 var ant_colonyACO = null;
